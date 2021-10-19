@@ -9,8 +9,6 @@
             "email": "harshthadani98286@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable" : true,
     "require": {},
     "autoload": {
         "psr-4": {
