@@ -1,7 +1,7 @@
 {
     "name": "gl/otp",
     "description": "This package will send, resend and verify otp sent on a email/mobile number.",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
