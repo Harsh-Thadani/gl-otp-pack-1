@@ -9,7 +9,9 @@
             "email": "harshthadani98286@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.3|^8.0"
+    },
     "autoload": {
         "psr-4": {
             "gl\\otp\\": "src/"
