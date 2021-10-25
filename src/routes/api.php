@@ -8,6 +8,13 @@ Route::get('otp',function(){
     return 'Hello';
 });
 
-Route::post('/sendOtp',[OtpController::class, 'sendOtp'])->name('sendOtp');
-Route::post('/resendOtp/{phone}',[OtpController::class, 'resendOtp'])->name('resendOtp');
-Route::post('/verifyOtp',[OtpController::class, 'verifyOtp'])->name('verifyOtp');
+//Api Routes
+Route::post('/sendOtp',[OtpController::class, 'sendOtp'])->name('api.sendOtp');
+Route::post('/resendOtp/{phone}',[OtpController::class, 'resendOtp'])->name('api.resendOtp');
+Route::post('/verifyOtp',[OtpController::class, 'verifyOtp'])->name('api.verifyOtp');
+
+//Web Routes
+Route::get('/otp',[OtpController::class, 'index'])->name('otp');
+Route::post('/sendOtp',[OtpController::class, 'webSendOtp'])->name('web.sendOtp');
+Route::post('/resendOtp',[OtpController::class, 'webResendOtp'])->name('web.resendOtp');
+Route::post('/verifyOtp',[OtpController::class, 'webVerifyOtp'])->name('web.verifyOtp');
